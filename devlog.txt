@@ -1,0 +1,15 @@
+TNPG: Watson vs The Final Project
+APCS
+Final Project
+
+
+2022-01-13, Classtime
+ - Created Repo
+ - Filled out goog form
+ - Current ideas include
+ 	- RPG
+ 	- Card Game
+ 	- Chat bot?! (using magpie as a reference)
+ 	- Mine Sweeper!
+ 	- Tic Tac Toe
+ 	- Incorrect math homework doer 
