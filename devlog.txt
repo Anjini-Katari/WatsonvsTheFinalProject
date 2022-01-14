@@ -1,15 +1,52 @@
-TNPG: Watson vs The Final Project
-APCS
-Final Project
+Watson vs The Final Project
+Anjini Katari
+Ruby Friedman
+Joshua Gao
+pd 7
+---------------------
+RPG Game! Fun title is still being decided.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OBSTACLES OVERCOME
+ * Deciding on a topic for the final project that would 
+   thoroughly demonstrate what we have learned throughout
+   this semester!
+ *
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow we so BOSS bc...
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+blah blah pesky bug...
+maybe some of these will move into the Obs.Ovrcm section...
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow! oo!...
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+we changed ___ to ___ bc...
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tales of wisdom gained...
+||||||||||||||||||||||||||||||||||||||||||
 
 
-2022-01-13, Classtime
- - Created Repo
- - Filled out goog form
- - Current ideas include
- 	- RPG
- 	- Card Game
- 	- Chat bot?! (using magpie as a reference)
- 	- Mine Sweeper!
- 	- Tic Tac Toe
- 	- Incorrect math homework doer 
+
+ ______   ______   __   __   __       ______   _______     
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\    
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__  
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\ 
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/ 
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \ 
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/ 
+==============================================================
+
+
+2022-01-13
+--------------------------------------------------------------
+Anjini :: Created Repo and filled out goog form
+Ruby :: Helped brainstorm final project ideas
+==============================================================
