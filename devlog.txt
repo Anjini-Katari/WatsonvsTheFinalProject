@@ -45,8 +45,18 @@ tales of wisdom gained...
 ==============================================================
 
 
-2022-01-13
+2022-01-13 -- Classtime
 --------------------------------------------------------------
 Anjini :: Created Repo and filled out goog form
 Ruby :: Helped brainstorm final project ideas
 ==============================================================
+
+
+2022-01-14 -- Classtime
+--------------------------------------------------------------
+Anjini & Ruby :: Came to a conclusion about the topic of the
+                 FP, it will be a RPG game.
+Anjini :: Came up with a pronoun feature for the RPG game
+Ruby :: Found out how to make the terminal COLORFUL
+==============================================================
+
