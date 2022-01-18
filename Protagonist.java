@@ -1,3 +1,8 @@
+/** Watson vs The Final Project
+Anjini Katari
+Ruby Friedman
+Joshua Gao */
+
 public class Protagonist {
 	protected String _name;
 	protected String[] _pronouns;
