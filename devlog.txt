@@ -69,6 +69,5 @@ Ruby :: Created the proposal document and started drafting it
 2022-01-17
 --------------------------------------------------------------
 Anjini :: Created a storyline/lore for the RPG.
-Anjini & Ruby:: Finished the proposal.
- 
+Anjini & Ruby:: Finished the proposal and v0 of the RPG.
 ==============================================================
