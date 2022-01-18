@@ -60,3 +60,8 @@ Anjini :: Came up with a pronoun feature for the RPG game
 Ruby :: Found out how to make the terminal COLORFUL
 ==============================================================
 
+2022-01-16             
+--------------------------------------------------------------
+Anjini :: Created the team flag
+Ruby :: Created the proposal document and started drafting it
+==============================================================
