@@ -55,7 +55,7 @@ Ruby :: Helped brainstorm final project ideas
 2022-01-14 -- Classtime
 --------------------------------------------------------------
 Anjini & Ruby :: Came to a conclusion about the topic of the
-                 FP, it will be a RPG game.
+ FP, it will be a RPG game.
 Anjini :: Came up with a pronoun feature for the RPG game
 Ruby :: Found out how to make the terminal COLORFUL
 ==============================================================
@@ -64,4 +64,11 @@ Ruby :: Found out how to make the terminal COLORFUL
 --------------------------------------------------------------
 Anjini :: Created the team flag
 Ruby :: Created the proposal document and started drafting it
+==============================================================
+
+2022-01-17
+--------------------------------------------------------------
+Anjini :: Created a storyline/lore for the RPG.
+Anjini & Ruby:: Finished the proposal.
+ 
 ==============================================================
