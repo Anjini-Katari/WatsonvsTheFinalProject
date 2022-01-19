@@ -11,7 +11,8 @@ public class Woo {
 	private int choice;
 	public String[] pronouns = new String[3];
 	private boolean gameOver;
-
+        public String s;
+	public String name = "";
 	private InputStreamReader isr;
 	private BufferedReader in;
 
@@ -26,8 +27,6 @@ public class Woo {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	public void newGame() {
-		String s;
-		String name = "";
 
 		s = "~~~ Welcome to the famous Watson RPG! ~~~\n";
 		System.out.print( s );
@@ -70,34 +69,12 @@ public class Woo {
                 }
 
 		bo = new Protagonist(name, pronouns);
-		
+
 		s = "You and 3 of your closest friends are spending the weekend in a lovely log cabin in the woods, on a mountain. You wake up after your first night and find that all of your food has been eaten by a bear! \n \n Instead of driving back home, you all decide to try to find some food. While on a hiking trail, you and your friends find some berries. One of your friends finds a group of birds eating them, and reasons that they would be safe to eat. \n \n That night you all snack on berries and other plants found in the forest. \n \n The next morning, you step outside the cabin for some fresh air, only for everything to look different from the day before. You've been teleported to a different universe!! \n \n Confused, you run back inside and wake up your friends. Together you collectively decide to explore the mountain, and split up into groups of 2. \n \n Which way would you like to explore? \n \n";
-	
-		s += "\t1: Up the mountain\n";
-		s += "\t2: Down the mountain \n";
-		s += "Selection: ";
-		
 		System.out.println(s);
-	
-		try {
-			choice  = Integer.parseInt( in.readLine() );
-                }
-
-		catch ( IOException e ) { }
-		
-		if (choice == 1) {
-			s = "Up the mountain we go!";
-			System.out.println(s);
-			//up = new UpMountain();
-		}
-		else {
-			s = "Down, down, down the mountain!";
-			System.out.println(s);
-			//down = new DownMountain();
-		}
-
-
-	} //end new game
+		Cabin hewwo = new Cabin();
+		hewwo.cabin(name, pronouns);
+	}
 
 	public static void main( String[] args ) {
 		//loading...
