@@ -2,8 +2,10 @@ import java.io.*;
 import java.util.*;
 
 public class Cabin {
+
+	protected String _name;
+	protected String[] _pronouns;
 	private int choice;
-	public String[] pronouns = new String[3];
 	private boolean gameOver;
 	public String name = "";
 	private InputStreamReader isr;
@@ -19,8 +21,10 @@ public class Cabin {
         }
 
         public Cabin( String name, String[] pronouns ) {
+		this();
                 _name = name;
                 _pronouns = pronouns;
+		cabin();
         }
        	public void cabin() {
                 s = "\t1: Up the mountain\n";
