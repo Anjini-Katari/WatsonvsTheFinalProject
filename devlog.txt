@@ -71,3 +71,9 @@ Ruby :: Created the proposal document and started drafting it
 Anjini :: Created a storyline/lore for the RPG.
 Anjini & Ruby:: Finished the proposal and v0 of the RPG.
 ==============================================================
+
+2022-01-18 -- Classtime
+--------------------------------------------------------------
+Anjini & Ruby :: Created v1 of the RPG which has the user
+ select their first path.
+==============================================================
