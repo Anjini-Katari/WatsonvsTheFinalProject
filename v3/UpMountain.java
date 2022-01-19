@@ -4,6 +4,7 @@ import java.util.*;
 public class UpMountain {
 	protected String __name;
 	protected String[] _pronouns;
+	protected ArrayList treasure = new ArrayList<String>();
 
 	protected int choice;
 	protected String[] pronouns = new String[3];
@@ -86,7 +87,7 @@ public class UpMountain {
 	}
 
 	public void fight() {
-
+		
 	}
 	public void pheonix() {
 	}
