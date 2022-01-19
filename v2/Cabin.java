@@ -3,14 +3,14 @@ import java.util.*;
 
 public class Cabin {
 
-	protected String _name;
-	protected String[] _pronouns;
-	private int choice;
-	private boolean gameOver;
-	public String name = "";
-	private InputStreamReader isr;
-	private BufferedReader in;
-	public String s; 
+	protected static String _name;
+	protected static String[] _pronouns;
+	private static int choice;
+	private static boolean gameOver;
+	public static String name = "";
+	private static InputStreamReader isr;
+	private static BufferedReader in;
+	public static String s; 
 
 
         public Cabin() {
@@ -26,7 +26,7 @@ public class Cabin {
                 _pronouns = pronouns;
 		cabin();
         }
-       	public void cabin() {
+       	public static void cabin() {
                 s = "\t1: Up the mountain\n";
                 s += "\t2: Down the mountain \n";
                 s += "Selection: ";

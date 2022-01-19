@@ -21,6 +21,7 @@ public class UpMountain {
 	}
 
 	public UpMountain( String name, String[] pronouns ) {
+		this();
         	_name = name;
 		_pronouns = pronouns;
     	}
@@ -57,7 +58,7 @@ public class UpMountain {
 		s += "The witch cackles mysteriously, '";
 		s += _name;
 		s += " right? I've heard all about you...' You start to feel a little uneasy and back off slowly \n";
-		s += "The witch cackles again, 'don't worry, I'll make sure everything is as painless as possible'";
+		s += "The witch cackles again, 'don't worry, I'll make sure everything is as painless as possible \n'";
 		s += "\t1: run \n";
                 s += "\t2: FIGHT \n";
                 s += "Selection: ";
@@ -78,7 +79,8 @@ public class UpMountain {
 	}
 
 	public void run() {
-		String s = "You sprint away quickly, running as fast as you possibly can. Somehow, you end up back at your log cabin, perhaps you should try a different path this time...";
+		String s = "You sprint away quickly, running as fast as you possibly can. Somehow, you end up back at your log cabin, perhaps you should try a different path this time... \n";
+		System.out.print( s );
 		Cabin.cabin();
 	}
 
