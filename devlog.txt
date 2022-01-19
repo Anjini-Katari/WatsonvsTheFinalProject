@@ -11,18 +11,22 @@ OBSTACLES OVERCOME
  * Deciding on a topic for the final project that would 
    thoroughly demonstrate what we have learned throughout
    this semester!
- *
+ * We had an issue with static and non-static methods, and
+   kept running into an issue where a non-static method 
+   was invoked from a static context so we changed the methods
+   in that class to static and fixed the subsequent errors and
+   eventually it worked!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
+How to repeat the name given at the start of the RPG and use the users 
+correct pronouns
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wow! oo!...
+
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,4 +80,16 @@ Anjini & Ruby:: Finished the proposal and v0 of the RPG.
 --------------------------------------------------------------
 Anjini & Ruby :: Created v1 of the RPG which has the user
  select their first path.
+==============================================================
+
+2022-01-18
+--------------------------------------------------------------
+Anjini :: completed the UML diagrams for each class and its methods
+Anjini & Ruby :: Created v2 of the RPG which accounts for about a
+ quarter of the storyline.
+Ruby :: Figured out a VERY pesky bug in the code that was from us
+ forgetting to put this(); in the overloaded constructor which
+ prevented the class from running the default constructor first.
+Anjini & Ruby :: Finished v2, feeling much more confadient in the storyline
+ and there are a lot more paths for the user to currently take.
 ==============================================================
