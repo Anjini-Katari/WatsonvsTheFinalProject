@@ -38,7 +38,7 @@ public class City{
         String s = "\n *portal whooshing noises* \n \n";
         s += "Whoa! \n You suddenly appear in a magical, bustling city, filled with all kinds of magical creatures! \n";
         s += "You continue to follow the pheonix into the twisted, narrow streets of the city market, when you see a centaur";
-        s += "drop a bag of their blue looking apples. \n The centaur appears extremely distressed about this. \n ";
+        s += " drop a bag of their blue looking apples. \n The centaur appears extremely distressed about this. \n ";
 
         s += "\t1: Help the centaur \n";
         s += "\t2: Continue to follow the pheonix \n";
