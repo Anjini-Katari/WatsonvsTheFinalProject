@@ -54,7 +54,7 @@ public class Cabin {
                 else {
                         s = "Down, down, down the mountain!";
                         System.out.println(s);
-                        //down = new DownMountain();
+                        DownMountain down = new DownMountain(_name, _pronouns, _treasure);
                 }
 
 
