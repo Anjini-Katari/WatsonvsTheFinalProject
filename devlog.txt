@@ -16,13 +16,15 @@ OBSTACLES OVERCOME
    was invoked from a static context so we changed the methods
    in that class to static and fixed the subsequent errors and
    eventually it worked!
+ * Taking user inputed data and having the computer print it
+   back out at the user from different classes.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
 
+
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-How to repeat the name given at the start of the RPG and use the users 
-correct pronouns
+
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,4 +94,22 @@ Ruby :: Figured out a VERY pesky bug in the code that was from us
  prevented the class from running the default constructor first.
 Anjini & Ruby :: Finished v2, feeling much more confadient in the storyline
  and there are a lot more paths for the user to currently take.
+==============================================================
+
+2022-01-19 -- Classtime
+--------------------------------------------------------------
+Ruby & Anjni :: Figured out how to print out the users inputed
+ information (ex: name) back at them from different classes.
+Anjini :: Created a qaf post about import java.util.* and when
+ we would need that. Also implemented a treasure ArrayList.
+Ruby :: Created v3 with new updates and paths for the RPG
+==============================================================
+
+2022-01-19
+--------------------------------------------------------------
+Ruby & Anjini :: Finished v3, the RPG now has all paths marked
+ out, and the code is completely runnable. There are still a
+ few minor format and code fixes we plan on adding for v4.
+Anjini :: Created the flowchart for the classes and methods
+Ruby :: updated the README and devlog, and finished DownMountain.java
 ==============================================================
