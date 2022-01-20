@@ -1,10 +1,13 @@
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
 
 public class Cabin {
 
 	protected static String _name;
 	protected static String[] _pronouns;
+	protected static ArrayList<String> _treasure;
+
+
 	private static int choice;
 	private static boolean gameOver;
 	public static String name = "";
@@ -20,10 +23,11 @@ public class Cabin {
                 choice = 0;
         }
 
-        public Cabin( String name, String[] pronouns ) {
+        public Cabin( String name, String[] pronouns, ArrayList<String> treasure) {
 		this();
                 _name = name;
                 _pronouns = pronouns;
+                _treasure = treasure;
 		cabin();
         }
        	public static void cabin() {
@@ -32,6 +36,8 @@ public class Cabin {
                 s += "Selection: ";
 
                 System.out.println(s);
+
+                
 
                 try {
                         choice  = Integer.parseInt( in.readLine() );
@@ -42,12 +48,13 @@ public class Cabin {
                 if (choice == 1) {
                         s = "Up the mountain we go!";
                         System.out.println(s);
-                        UpMountain up = new UpMountain(_name, _pronouns);
+                        UpMountain up = new UpMountain(_name, _pronouns, _treasure);
+
                 }
                 else {
                         s = "Down, down, down the mountain!";
                         System.out.println(s);
-                        //down = new DownMountain();
+                        DownMountain down = new DownMountain(_name, _pronouns, _treasure);
                 }
 
 

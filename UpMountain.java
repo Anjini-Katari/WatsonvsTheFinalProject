@@ -1,9 +1,10 @@
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
 
 public class UpMountain {
-	protected String _name;
+	protected String __name;
 	protected String[] _pronouns;
+	protected ArrayList<String> _treasure;
 
 	protected int choice;
 	protected String[] pronouns = new String[3];
@@ -17,18 +18,22 @@ public class UpMountain {
 		isr = new InputStreamReader( System.in );
 		in = new BufferedReader( isr );
 		choice = 0;
-		Mountain();
+
 	}
 
-	public UpMountain( String name, String[] pronouns ) {
+	public UpMountain( String name, String[] pronouns, ArrayList<String> treasure) {
 		this();
-        	_name = name;
+        __name = name;
 		_pronouns = pronouns;
+		_treasure = treasure;
+		Mountain();
     	}
 
     // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
-    public String getName() { return _name; }
+    public String getName() { return __name;}
     public String[] getPronouns() { return _pronouns; }
+	public ArrayList<String> getTreasure() { return _treasure; }
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	public void Mountain() {
@@ -56,7 +61,7 @@ public class UpMountain {
 	public void pixie() {
 		String s = "The pixie giggles and flies off, leaving a trail of pixie dust behind for you to follow. \n Eventually you reach a small witches hut and decide to enter...\n The door creaks open and you enter slowly. As you explore the cabin you encounter a witch! \n";
 		s += "The witch cackles mysteriously, '";
-		s += _name;
+		s += getName();
 		s += " right? I've heard all about you...' You start to feel a little uneasy and back off slowly \n";
 		s += "The witch cackles again, 'don't worry, I'll make sure everything is as painless as possible \n'";
 		s += "\t1: run \n";
@@ -85,9 +90,20 @@ public class UpMountain {
 	}
 
 	public void fight() {
-
+		String s = "You decide to fight! \nYou punch the witch in the face as your friend finds a bucket water and dumps it on her. \n You both watch her body dissolve, in her place lies a small obsidian horse. \n You pick up the horse and place it in your pocket. \n ";
+		_treasure.add("tiny obsidian horse");
+		s += "\n *treasure + 1*";
+		s += "\n \n You and your friend take a look around the hut once more.\n Finding nothing else of value, you make your way back to the cabin.\n";
+		System.out.print(s);
+		Cabin trees = new Cabin(__name, _pronouns, _treasure);
 	}
 	public void pheonix() {
+		String s = "The pheonix nods slightly and leads you up a rocky path. \n";
+		s += "You follow it until you reach a lake, after which the pheonix dives in after beckoning you to follow. \n";
+		s += "After a moment of hesitation, you jump in after it, your friend close behind.\n";
+		System.out.print(s);
+		City atlantis = new City(__name, _pronouns, _treasure);
+
 	}
 
 
