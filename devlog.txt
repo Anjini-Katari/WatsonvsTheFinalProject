@@ -4,7 +4,7 @@ Ruby Friedman
 Joshua Gao
 pd 7
 ---------------------
-RPG Game! Fun title is still being decided.
+The Famous Watson RPG!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 OBSTACLES OVERCOME
@@ -20,25 +20,49 @@ OBSTACLES OVERCOME
    back out at the user from different classes.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
-
+ * We persevered through a huge amount of static errors by going
+   one by one down the list of errors until they all resolved themselves.
+ * Finished most of the code in a logical and timely manner, spread it out well.
+ * We made a very clear plan for implementation that we followed and it helped
+   us stay on track.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Introducing pheonix to DownMountain for a logical transition
+How to implement a BlackJack minigame with the gremlins
+How to implement colors in the terminal window.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+How to implement try catch statements and actually understand what they do.
+How to involve user input into picking a path for the RPG.
+import java.util.* imports the entirety of the contents of the util package, and
+for our purposes is excessive, be specific and only import what you need.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-we changed ___ to ___ bc...
+we changed pronouns to treasure bc we didn't ever need to address
+the user by their pronouns, instead we used the second person "you".
+The addition of treasure allowed us to give the user little gifts along
+the way for choosing certain paths. 
+We had the DownMountain and UpMountain methods converge at city to prevent
+having to create a whole other half of the story, this allowed us to keep the
+paths much more simple. 
+We decided to implement a BlackJack minigame in DownMountain after you encounter
+the gremlins to be able to continue to the City. This minigame allows us to show 
+our usage of arrays and more of what we have learned over the course of the semester.
+
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 tales of wisdom gained...
 ||||||||||||||||||||||||||||||||||||||||||
-
+Reach compilability first, work down starting from the first error
+until code is compilable and let the error messages guide you.
+System.out.print statements are very helpful for finding out where the code
+has gone wrong.
+Take breaks if needed, if an error has been plauging you for many hours, clear
+your mind before returning to it.
 
 
  ______   ______   __   __   __       ______   _______     
@@ -112,4 +136,17 @@ Ruby & Anjini :: Finished v3, the RPG now has all paths marked
  few minor format and code fixes we plan on adding for v4.
 Anjini :: Created the flowchart for the classes and methods
 Ruby :: updated the README and devlog, and finished DownMountain.java
+==============================================================
+
+2022-01-20 --Classtime
+--------------------------------------------------------------
+Ruby & Anjini :: Created v4 and decided to start coding a BlackJack
+ minigame into one of the RPG paths. Used a new class called 
+ BlackJack.java to do this.
+==============================================================
+
+2022-01-20
+--------------------------------------------------------------
+Ruby & Anjini :: Updated devlog, README, and the flowchart.
+ Also continued encoding the blackjack minigame in v4.
 ==============================================================
