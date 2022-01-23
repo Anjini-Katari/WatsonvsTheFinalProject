@@ -18,6 +18,8 @@ OBSTACLES OVERCOME
    eventually it worked!
  * Taking user inputed data and having the computer print it
    back out at the user from different classes.
+ * Created an entire BlackJack minigame and perservered through
+   all the error messages to get it to work.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
  * We persevered through a huge amount of static errors by going
@@ -25,12 +27,14 @@ wow we so BOSS bc...
  * Finished most of the code in a logical and timely manner, spread it out well.
  * We made a very clear plan for implementation that we followed and it helped
    us stay on track.
+ * We encoded an entire BlackJack minigame!
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Introducing pheonix to DownMountain for a logical transition
-How to implement a BlackJack minigame with the gremlins
 How to implement colors in the terminal window.
+How to make cards like the Jack, Queen King, and Ace say their names 
+rather then 11, 12, 13 and 1.
+
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +53,7 @@ We had the DownMountain and UpMountain methods converge at city to prevent
 having to create a whole other half of the story, this allowed us to keep the
 paths much more simple. 
 We decided to implement a BlackJack minigame in DownMountain after you encounter
-the gremlins to be able to continue to the City. This minigame allows us to show 
+the goblins to be able to continue to the City. This minigame allows us to show 
 our usage of arrays and more of what we have learned over the course of the semester.
 
 
@@ -149,4 +153,15 @@ Ruby & Anjini :: Created v4 and decided to start coding a BlackJack
 --------------------------------------------------------------
 Ruby & Anjini :: Updated devlog, README, and the flowchart.
  Also continued encoding the blackjack minigame in v4.
+==============================================================
+
+2022-01-21 -- Classtime
+--------------------------------------------------------------
+Ruby & Anjini :: Created v5 in which we worked on the BlackJack
+ minigame, and attempted to figure out how we could implement colors!
+==============================================================
+
+2022-01-23
+--------------------------------------------------------------
+Ruby & Anjini :: Finished the BlackJack minigame!
 ==============================================================
