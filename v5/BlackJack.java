@@ -33,25 +33,25 @@ public class BlackJack {
 		boolean var = true;
 		while (var) {
 			if (GobNum > 21) {
-				System.out.println("You win!");
+				System.out.println("\n You win!");
 				var = false;
 				death = false;
 				break;
 			}
 			else if (GobNum == 21) {
-				System.out.println("The Goblin has won... death is your fate");
+				System.out.println("\n The Goblin has won... death is your fate");
 				var = false;
 				death = true;
 				break;
 			}
 			else if(YourNum == 21) {
-                                System.out.println("You win!");
+                                System.out.println("\n You win!");
 				death = false;
                                 var = false;
 				break;
                         }
    	                else if (YourNum > 21) {
-                                System.out.println("The Goblin has won... death is your fate");
+                                System.out.println("\n The Goblin has won... death is your fate");
 				death = true;
                                 var = false;
 				break;
@@ -78,14 +78,23 @@ public class BlackJack {
 			                Humhelper();
 	  	                }
 		                else {
-					if (YourNum > GobNum) {
-	        	                        System.out.println("You win!");
+					if (GobNum <= 17) {
+						GobHelper();
+					}
+		                        else if (GobNum > 21) {
+        		                        System.out.println("\n You win!");
+      	        	                 	var = false;
+                        		        death = false;
+                        		        break;
+                       			}
+					else if (YourNum > GobNum) {
+	        	                        System.out.println("\n You win!");
 						death = false;
         	        	                var = false;
                 		                break;
 					}
 					else if (GobNum > YourNum) {
-                	                	System.out.println("The Goblin has won... death is your fate");
+                	                	System.out.println("\n The Goblin has won... death is your fate");
 						death = true;
                        		        	var = false;
                        		        	break;
