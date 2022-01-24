@@ -3,11 +3,9 @@ import java.util.ArrayList;
 
 public class UpMountain {
 	protected String __name;
-	protected String[] _pronouns;
 	protected ArrayList<String> _treasure;
 
 	protected int choice;
-	protected String[] pronouns = new String[3];
 	protected boolean gameOver;
 
 	protected InputStreamReader isr;
@@ -21,17 +19,15 @@ public class UpMountain {
 
 	}
 
-	public UpMountain( String name, String[] pronouns, ArrayList<String> treasure) {
+	public UpMountain( String name, ArrayList<String> treasure) {
 		this();
-        __name = name;
-		_pronouns = pronouns;
+	        __name = name;
 		_treasure = treasure;
 		Mountain();
     	}
 
     // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
-    public String getName() { return __name;}
-    public String[] getPronouns() { return _pronouns; }
+	public String getName() { return __name;}
 	public ArrayList<String> getTreasure() { return _treasure; }
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,14 +91,14 @@ public class UpMountain {
 		s += "\n *treasure + 1*";
 		s += "\n \n You and your friend take a look around the hut once more.\n Finding nothing else of value, you make your way back to the cabin.\n";
 		System.out.print(s);
-		Cabin trees = new Cabin(__name, _pronouns, _treasure);
+		Cabin trees = new Cabin(__name, _treasure);
 	}
 	public void pheonix() {
 		String s = "The pheonix nods slightly and leads you up a rocky path. \n";
 		s += "You follow it until you reach a lake, after which the pheonix dives in after beckoning you to follow. \n";
 		s += "After a moment of hesitation, you jump in after it, your friend close behind.\n";
 		System.out.print(s);
-		City atlantis = new City(__name, _pronouns, _treasure);
+		City atlantis = new City(__name, _treasure);
 
 	}
 

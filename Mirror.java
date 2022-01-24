@@ -3,11 +3,9 @@ import java.util.ArrayList;
 
 public class Mirror{
 	protected String __name;
-	protected String[] _pronouns;
 	protected ArrayList<String> _treasure;
 
 	protected int choice;
-	protected String[] pronouns = new String[3];
 	protected boolean gameOver;
 
 	protected InputStreamReader isr;
@@ -21,17 +19,15 @@ public class Mirror{
 
 	}
 
-	public Mirror( String name, String[] pronouns, ArrayList<String> treasure) {
+	public Mirror( String name, ArrayList<String> treasure) {
 		this();
-        __name = name;
-		_pronouns = pronouns;
+        	__name = name;
 		_treasure = treasure;
 		forest();
     	}
 
     // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
-    public String getName() { return __name;}
-    public String[] getPronouns() { return _pronouns; }
+	public String getName() { return __name;}
 	public ArrayList<String> getTreasure() { return _treasure; }
 
     public void forest(){
@@ -80,7 +76,7 @@ public class Mirror{
                 s += _treasure.get(i);
                 s += "\n";
             }
-            s += "You look at the treasures in surprise and wonder.\n\n";
+            s += "You look at the treasure in surprise and wonder.\n\n";
         }
         
         System.out.print(s);

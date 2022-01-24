@@ -4,7 +4,6 @@ import java.util.ArrayList;
 public class Cabin {
 
 	protected static String _name;
-	protected static String[] _pronouns;
 	protected static ArrayList<String> _treasure;
 
 
@@ -23,10 +22,9 @@ public class Cabin {
                 choice = 0;
         }
 
-        public Cabin( String name, String[] pronouns, ArrayList<String> treasure) {
+        public Cabin( String name, ArrayList<String> treasure) {
 		this();
                 _name = name;
-                _pronouns = pronouns;
                 _treasure = treasure;
 		cabin();
         }
@@ -37,7 +35,6 @@ public class Cabin {
 
                 System.out.println(s);
 
-                
 
                 try {
                         choice  = Integer.parseInt( in.readLine() );
@@ -48,13 +45,13 @@ public class Cabin {
                 if (choice == 1) {
                         s = "Up the mountain we go!";
                         System.out.println(s);
-                        UpMountain up = new UpMountain(_name, _pronouns, _treasure);
+                        UpMountain up = new UpMountain(_name, _treasure);
 
                 }
                 else {
                         s = "Down, down, down the mountain!";
                         System.out.println(s);
-                        DownMountain down = new DownMountain(_name, _pronouns, _treasure);
+                        DownMountain down = new DownMountain(_name, _treasure);
                 }
 
 

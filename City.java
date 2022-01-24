@@ -3,11 +3,9 @@ import java.util.ArrayList;
 
 public class City{
 	protected String __name;
-	protected String[] _pronouns;
 	protected ArrayList<String> _treasure;
 
 	protected int choice;
-	protected String[] pronouns = new String[3];
 	protected boolean gameOver;
 
 	protected InputStreamReader isr;
@@ -21,17 +19,15 @@ public class City{
 
 	}
 
-	public City( String name, String[] pronouns, ArrayList<String> treasure) {
+	public City( String name, ArrayList<String> treasure) {
 		this();
-        __name = name;
-		_pronouns = pronouns;
+	        __name = name;
 		_treasure = treasure;
 		city();
     	}
 
     // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
-    public String getName() { return __name;}
-    public String[] getPronouns() { return _pronouns; }
+	public String getName() { return __name;}
 	public ArrayList<String> getTreasure() { return _treasure; }
 
     public void city(){
@@ -77,7 +73,7 @@ public class City{
 
         System.out.print(s);
 
-        Mirror onTheWall = new Mirror(__name, _pronouns, _treasure);
+        Mirror onTheWall = new Mirror(__name, _treasure);
     }
 
     public void cont(){
@@ -89,7 +85,7 @@ public class City{
 
         System.out.print(s);
 
-        Mirror onTheWall = new Mirror(__name, _pronouns, _treasure);
+        Mirror onTheWall = new Mirror(__name, _treasure);
     }
 
 }//city class end
