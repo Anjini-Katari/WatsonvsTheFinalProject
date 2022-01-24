@@ -8,7 +8,6 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Woo {
-	private Protagonist bo;
 	private int choice;
 	private boolean gameOver;
         public String s;

@@ -105,51 +105,173 @@ public class BlackJack {
 
 
 	}
-	public  void Humhelper() {
+	public void Humhelper() {
 		String s = "\n It's a ";
 		int index = (int)(Math.random() * deck.size());
-		s += deck.get(index);
 		YourNum += (int)(deck.get(index));
-		deck.remove(index);
 		if (index <= 13) {
+			if (((int)(deck.get(index))) == 11){
+				s += "jack";
+			}
+			else if (((int)(deck.get(index))) == 12){
+				s += "queen";
+			}
+			else if (((int)(deck.get(index))) == 13){
+				s += "king";
+			}
+			else if (((int)(deck.get(index))) == 1){
+				s += "ace";
+			}
+			else {
+				s += deck.get(index);
+			}
 			s += " of spades!";
 		}
 		else if (index <= 26) {
+			if (((int)(deck.get(index))) == 11){
+				s += "jack";
+			}
+			else if (((int)(deck.get(index))) == 12){
+				s += "queen";
+			}
+			else if (((int)(deck.get(index))) == 13){
+				s += "king";
+			}
+			else if (((int)(deck.get(index))) == 1){
+				s += "ace";
+			}
+			else {
+				s += deck.get(index);
+			}
 			s += " of hearts!";
 		}
 		else if (index <= 39) {
+			if (((int)(deck.get(index))) == 11){
+				s += "jack";
+			}
+			else if (((int)(deck.get(index))) == 12){
+				s += "queen";
+			}
+			else if (((int)(deck.get(index))) == 13){
+				s += "king";
+			}
+			else if (((int)(deck.get(index))) == 1){
+				s += "ace";
+			}
+			else {
+				s += deck.get(index);
+			}
 			s += " of diamonds!";
 		}
 		else {
+			if (((int)(deck.get(index))) == 11){
+				s += "jack";
+			}
+			else if (((int)(deck.get(index))) == 12){
+				s += "queen";
+			}
+			else if (((int)(deck.get(index))) == 13){
+				s += "king";
+			}
+			else if (((int)(deck.get(index))) == 1){
+				s += "ace";
+			}
+			else {
+				s += deck.get(index);
+			}
 			s += " of clubs!";
 		}
 		s += "\n You now have ";
 		s += YourNum;
 		s+= " points";
 		System.out.print(s);
+		deck.remove(index);
+
 	}
         public void GobHelper() {
                 String s = "\n The Goblin draws a card, it's a ";
                 int index = (int)(Math.random()* deck.size());
-                s += deck.get(index);
 		GobNum += (int) (deck.get(index));
-                deck.remove(index);
-                if (index <= (deck.size()/4)) {
-                        s += " of spades!";
-                }
-                else if (index <= (deck.size()/2)) {
-                        s += " of hearts!";
-                }
-                else if (index <= ((deck.size() * 3) /4)) {
-                        s += " of diamonds!";
-                }
-                else {
-                        s += " of clubs!";
-                }
+                if (index <= 13) {
+					if (((int)(deck.get(index))) == 11){
+						s += "jack";
+					}
+					else if (((int)(deck.get(index))) == 12){
+						s += "queen";
+					}
+					else if (((int)(deck.get(index))) == 13){
+						s += "king";
+					}
+					else if (((int)(deck.get(index))) == 1){
+						s += "ace";
+					}
+					else {
+						s += deck.get(index);
+					}
+					s += " of spades!";
+				}
+				else if (index <= 26) {
+					if (((int)(deck.get(index))) == 11){
+						s += "jack";
+					}
+					else if (((int)(deck.get(index))) == 12){
+						s += "queen";
+					}
+					else if (((int)(deck.get(index))) == 13){
+						s += "king";
+					}
+					else if (((int)(deck.get(index))) == 1){
+						s += "ace";
+					}
+					else {
+						s += deck.get(index);
+					}
+					s += " of hearts!";
+				}
+				else if (index <= 39) {
+					if (((int)(deck.get(index))) == 11){
+						s += "jack";
+					}
+					else if (((int)(deck.get(index))) == 12){
+						s += "queen";
+					}
+					else if (((int)(deck.get(index))) == 13){
+						s += "king";
+					}
+					else if (((int)(deck.get(index))) == 1){
+						s += "ace";
+					}
+					else {
+						s += deck.get(index);
+					}
+					s += " of diamonds!";
+				}
+				else {
+					if (((int)(deck.get(index))) == 11){
+						s += "jack";
+					}
+					else if (((int)(deck.get(index))) == 12){
+						s += "queen";
+					}
+					else if (((int)(deck.get(index))) == 13){
+						s += "king";
+					}
+					else if (((int)(deck.get(index))) == 1){
+						s += "ace";
+					}
+					else {
+						s += deck.get(index);
+					}
+					s += " of clubs!";
+				}
                 s += "\n The Goblin now has ";
                 s += GobNum;
                 s+= " points";
                 System.out.print(s);
+				deck.remove(index);
+
         }
+
+
 
 }
