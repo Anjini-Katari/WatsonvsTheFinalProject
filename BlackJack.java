@@ -1,5 +1,9 @@
+/** Watson vs The Final Project
+Anjini Katari
+Ruby Friedman
+Joshua Gao */
+
 import java.io.*;
-//import java.util.*;
 import java.util.ArrayList;
 
 public class BlackJack {
