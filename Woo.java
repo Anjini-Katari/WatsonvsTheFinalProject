@@ -1,10 +1,11 @@
-/** Watson vs The Final Project
-Anjini Katari
-Ruby Friedman
-Joshua Gao */
+/** Watson vs The Final Project (Anjini Katari, Ruby Friedman, Joshua Gao)
+APCS
+FP
+2022-01-24
+total time spent: 20 hours
+*/
 
 import java.io.*;
-//import java.util.*;
 import java.util.ArrayList;
 
 public class Woo {
