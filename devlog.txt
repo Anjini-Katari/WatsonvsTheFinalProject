@@ -20,6 +20,8 @@ OBSTACLES OVERCOME
    back out at the user from different classes.
  * Created an entire BlackJack minigame and perservered through
    all the error messages to get it to work.
+ * cards like the Jack, Queen King, and Ace say their names
+   rather then 11, 12, 13 and 1.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow we so BOSS bc...
  * We persevered through a huge amount of static errors by going
@@ -27,14 +29,11 @@ wow we so BOSS bc...
  * Finished most of the code in a logical and timely manner, spread it out well.
  * We made a very clear plan for implementation that we followed and it helped
    us stay on track.
- * We encoded an entire BlackJack minigame!
+ * We encoded an entire BlackJack minigame into our RPG!
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How to implement colors in the terminal window.
-How to make cards like the Jack, Queen King, and Ace say their names 
-rather then 11, 12, 13 and 1.
-
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,10 +41,11 @@ How to implement try catch statements and actually understand what they do.
 How to involve user input into picking a path for the RPG.
 import java.util.* imports the entirety of the contents of the util package, and
 for our purposes is excessive, be specific and only import what you need.
+Learned how to encode a game such as blackjack that the user can play against the computer.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-we changed pronouns to treasure bc we didn't ever need to address
+We changed pronouns to treasure bc we didn't ever need to address
 the user by their pronouns, instead we used the second person "you".
 The addition of treasure allowed us to give the user little gifts along
 the way for choosing certain paths. 
@@ -55,6 +55,7 @@ paths much more simple.
 We decided to implement a BlackJack minigame in DownMountain after you encounter
 the goblins to be able to continue to the City. This minigame allows us to show 
 our usage of arrays and more of what we have learned over the course of the semester.
+Removed the 'Mage' path, replaced this with the blackjack minigame
 
 
 LESSONS LEARNED
@@ -67,6 +68,7 @@ System.out.print statements are very helpful for finding out where the code
 has gone wrong.
 Take breaks if needed, if an error has been plauging you for many hours, clear
 your mind before returning to it.
+Pair programming leads to success, your partner will catch many of the errors you miss.
 
 
  ______   ______   __   __   __       ______   _______     
@@ -163,5 +165,9 @@ Ruby & Anjini :: Created v5 in which we worked on the BlackJack
 
 2022-01-23
 --------------------------------------------------------------
-Ruby & Anjini :: Finished the BlackJack minigame!
+Ruby & Anjini :: Finished the BlackJack minigame! Also added jack,
+ queen, king, ace for certain cards instead of writing out their numbers
+ (11, 12, 13, 1)
+Ruby :: Updated Devlog and added all the new discoveries!
+Anjini :: Fixed up the README to better relfect our final edits!
 ==============================================================
