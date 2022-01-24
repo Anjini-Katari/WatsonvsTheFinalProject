@@ -2,16 +2,7 @@
 Anjini Katari, Ruby Friedman, Joshua Gao
 
 # Project Description
- * Our project is an RPG in which the user chooses their own adventure. The user will first give their name, and then will be led on an adventure that asks them questions about what they would do to form their own unique storyline. Throughout the journey and depending on the choices the user picks, they may obtain treasure, return home safely, or even die if they choose the wrong option!
+ * Our project is a single player RPG (Role Player Game) where the user is a human adventurer who, along their friend, gets transported into an alternate, magical universe. The first interaction the user will have is to give their name. Every interaction afterwards will involve a question which will determine the player's fate. All in all, there are 3 alternative endings, some better than others; however there are multiple ways to get to each one. On their journey, the user can obtain treasure, return home safely, or  die if they choose the wrong option! We recommend exploring all possible options for the full experience! (Ex. going up and down the mountain)
 
 # How To Launch
- * To launch the RPG the user must first create a clone of this repository in their terminal. They should then run the following commands to run the RPG, and they will then be able to play:
- ```$javac Cabin.java
-    $javac City.java   
-    $javac DownMountain.java
-    $javac Mirror.java
-    $javac Protagonist.java
-    $javac UpMountain.java
-    $javac Woo.java 
-    $java Woo
-    
+ * To start your journey `javac Woo.java`, then `java Woo`, type in your character's name, then type the number that cooresponds with the path you would like to take to continue your customized journey. 
