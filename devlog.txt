@@ -33,29 +33,32 @@ wow we so BOSS bc...
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-How to implement colors in the terminal window.
+How to implement colors in the terminal window. We are looking at alternative codes online that might give us the solution.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How to implement try catch statements and actually understand what they do.
+How to develop a well-thought storyline that involves multiple choices decided by the user to end up in separate story endings.
 How to involve user input into picking a path for the RPG.
-import java.util.* imports the entirety of the contents of the util package, and
-for our purposes is excessive, be specific and only import what you need.
+How to figure out the logistics of each pathway so they intersect at the correct timings. (Mind-mapping seemed to be very helpful in this regard.)
+Importing java.util.* imports the entirety of the contents of the util package, and learned it was excessive for our purposes. Based on this experience, we learned to specify the import so we only take what we actually need. 
 Learned how to encode a game such as blackjack that the user can play against the computer.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We changed pronouns to treasure bc we didn't ever need to address
-the user by their pronouns, instead we used the second person "you".
+We changed pronouns to treasure because we didn't ever need to address
+the user by their pronouns, thereby circumventing the problem of potential gender pronoun misusage,
+and instead decided to use a second-person narration of "you".
 The addition of treasure allowed us to give the user little gifts along
-the way for choosing certain paths. 
+the way for choosing certain paths which creates a sense of process that
+keeps the user engaged and motivated to discover the next clue. 
 We had the DownMountain and UpMountain methods converge at city to prevent
-having to create a whole other half of the story, this allowed us to keep the
-paths much more simple. 
+having to create a whole other half of the story. Logistically, this was the 
+best option because it reduced the copmlexity of the code. 
 We decided to implement a BlackJack minigame in DownMountain after you encounter
 the goblins to be able to continue to the City. This minigame allows us to show 
 our usage of arrays and more of what we have learned over the course of the semester.
-Removed the 'Mage' path, replaced this with the blackjack minigame
+Removed the 'Mage' path, replaced this with the blackjack minigame.
 
 
 LESSONS LEARNED
@@ -64,6 +67,8 @@ tales of wisdom gained...
 ||||||||||||||||||||||||||||||||||||||||||
 Reach compilability first, work down starting from the first error
 until code is compilable and let the error messages guide you.
+Going through Java API was helpful in determining the specific
+behaviors of methods that we wanted to implement into our game.
 System.out.print statements are very helpful for finding out where the code
 has gone wrong.
 Take breaks if needed, if an error has been plauging you for many hours, clear
@@ -85,33 +90,40 @@ Pair programming leads to success, your partner will catch many of the errors yo
 --------------------------------------------------------------
 Anjini :: Created Repo and filled out goog form
 Ruby :: Helped brainstorm final project ideas
+Joshua: Out of school
 ==============================================================
 
 
 2022-01-14 -- Classtime
 --------------------------------------------------------------
 Anjini & Ruby :: Came to a conclusion about the topic of the
- FP, it will be a RPG game.
+ FP: it will be a RPG game.
 Anjini :: Came up with a pronoun feature for the RPG game
 Ruby :: Found out how to make the terminal COLORFUL
+Joshua :: Conveyed with fellow team members about idea
+and agreed a RPG game would be fun
 ==============================================================
 
 2022-01-16             
 --------------------------------------------------------------
 Anjini :: Created the team flag
 Ruby :: Created the proposal document and started drafting it
+Joshua :: Continued following up over Messenger 
 ==============================================================
 
 2022-01-17
 --------------------------------------------------------------
 Anjini :: Created a storyline/lore for the RPG.
 Anjini & Ruby:: Finished the proposal and v0 of the RPG.
+Joshua: Still out of school, but helped fellow trios 
+refine their code in 8PM Zoom sessions
 ==============================================================
 
 2022-01-18 -- Classtime
 --------------------------------------------------------------
 Anjini & Ruby :: Created v1 of the RPG which has the user
  select their first path.
+Joshua: Continued assisting remotely in Zoom sessions.
 ==============================================================
 
 2022-01-18
@@ -122,7 +134,10 @@ Anjini & Ruby :: Created v2 of the RPG which accounts for about a
 Ruby :: Figured out a VERY pesky bug in the code that was from us
  forgetting to put this(); in the overloaded constructor which
  prevented the class from running the default constructor first.
-Anjini & Ruby :: Finished v2, feeling much more confadient in the storyline
+Joshua: Helped create 2 alternative pathways of UpMountain and 
+DownMountain to allow for divergence of player choice with trio 
+over Zoom. 
+Anjini & Ruby :: Finished v2, feeling much more confident in the storyline
  and there are a lot more paths for the user to currently take.
 ==============================================================
 
@@ -133,6 +148,7 @@ Ruby & Anjni :: Figured out how to print out the users inputed
 Anjini :: Created a qaf post about import java.util.* and when
  we would need that. Also implemented a treasure ArrayList.
 Ruby :: Created v3 with new updates and paths for the RPG
+Joshua: Helped formulate dialogue in new city location over Zoom.
 ==============================================================
 
 2022-01-19
@@ -140,6 +156,7 @@ Ruby :: Created v3 with new updates and paths for the RPG
 Ruby & Anjini :: Finished v3, the RPG now has all paths marked
  out, and the code is completely runnable. There are still a
  few minor format and code fixes we plan on adding for v4.
+Joshua: Helped create city storline over Zoom.
 Anjini :: Created the flowchart for the classes and methods
 Ruby :: updated the README and devlog, and finished DownMountain.java
 ==============================================================
@@ -149,18 +166,23 @@ Ruby :: updated the README and devlog, and finished DownMountain.java
 Ruby & Anjini :: Created v4 and decided to start coding a BlackJack
  minigame into one of the RPG paths. Used a new class called 
  BlackJack.java to do this.
+Joshua: Still out of school for this new minigame introduction,
+but communicated with trio over Zoom.
 ==============================================================
 
 2022-01-20
 --------------------------------------------------------------
 Ruby & Anjini :: Updated devlog, README, and the flowchart.
  Also continued encoding the blackjack minigame in v4.
+Joshua: Continued helping blackjack minigame over Zoom.
 ==============================================================
 
 2022-01-21 -- Classtime
 --------------------------------------------------------------
 Ruby & Anjini :: Created v5 in which we worked on the BlackJack
  minigame, and attempted to figure out how we could implement colors!
+Joshua: Still out of school for this more minigame revisions,
+but communicated with trio over Zoom.
 ==============================================================
 
 2022-01-23
@@ -168,6 +190,20 @@ Ruby & Anjini :: Created v5 in which we worked on the BlackJack
 Ruby & Anjini :: Finished the BlackJack minigame! Also added jack,
  queen, king, ace for certain cards instead of writing out their numbers
  (11, 12, 13, 1)
+Joshua: Thoroughly reviewed past codes for potential bugs.
 Ruby :: Updated Devlog and added all the new discoveries!
 Anjini :: Fixed up the README to better relfect our final edits!
+==============================================================
+2022-01-31
+--------------------------------------------------------------
+Joshua & Anjini :: Worked together to better optimisize BlackJack 
+code in which we removed the redundant code for globinHelper and 
+instead created a new royal method that will be invoked for both over 
+Zoom.
+Joshua: Originally, all my commits were implemented via Ruby and 
+Anjini b/c I was too sick to be in front of a computer. Finally able to
+upload those commits in new v6 with refined dialogues and other
+revision.
+Joshua: Rewrote project description of the game in READ.md and incorporated
+my edits for the other Java methods like BlackJack, Cabin, etc.
 ==============================================================
