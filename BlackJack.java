@@ -109,81 +109,51 @@ public class BlackJack {
 
 
 	}
+	
+	public String royal(int intInd, int index) {
+        String s = "";
+		if (intInd == 11){
+				s += "jack";
+			}
+		else if (intInd == 12){
+				s += "queen";
+			}
+		else if (intInd == 13){
+				s += "king";
+			}
+		else if (intInd == 1){
+				s += "ace";
+			}
+		else {
+			s += deck.get(index);
+		}
+        return s;
+	}
+		
 	public void Humhelper() {
 		String s = "\n It's a ";
 		int index = (int)(Math.random() * deck.size());
+        int intInd = (int)(deck.get(index));
 		YourNum += (int)(deck.get(index));
-		if (index <= 13) {
-			if (((int)(deck.get(index))) == 11){
-				s += "jack";
-			}
-			else if (((int)(deck.get(index))) == 12){
-				s += "queen";
-			}
-			else if (((int)(deck.get(index))) == 13){
-				s += "king";
-			}
-			else if (((int)(deck.get(index))) == 1){
-				s += "ace";
-			}
-			else {
-				s += deck.get(index);
-			}
-			s += " of spades!";
+
+        System.out.print(s);
+
+		if (index <= 13) {	
+            System.out.print(royal(intInd, index)); 
+			s = " of spades!";
 		}
+		
 		else if (index <= 26) {
-			if (((int)(deck.get(index))) == 11){
-				s += "jack";
-			}
-			else if (((int)(deck.get(index))) == 12){
-				s += "queen";
-			}
-			else if (((int)(deck.get(index))) == 13){
-				s += "king";
-			}
-			else if (((int)(deck.get(index))) == 1){
-				s += "ace";
-			}
-			else {
-				s += deck.get(index);
-			}
-			s += " of hearts!";
+			System.out.print(royal(intInd, index)); 
+			s = " of hearts!";
 		}
-		else if (index <= 39) {
-			if (((int)(deck.get(index))) == 11){
-				s += "jack";
-			}
-			else if (((int)(deck.get(index))) == 12){
-				s += "queen";
-			}
-			else if (((int)(deck.get(index))) == 13){
-				s += "king";
-			}
-			else if (((int)(deck.get(index))) == 1){
-				s += "ace";
-			}
-			else {
-				s += deck.get(index);
-			}
-			s += " of diamonds!";
+		else if (index <= 39) {}
+			System.out.print(royal(intInd, index)); 
+			s = " of diamonds!";
 		}
 		else {
-			if (((int)(deck.get(index))) == 11){
-				s += "jack";
-			}
-			else if (((int)(deck.get(index))) == 12){
-				s += "queen";
-			}
-			else if (((int)(deck.get(index))) == 13){
-				s += "king";
-			}
-			else if (((int)(deck.get(index))) == 1){
-				s += "ace";
-			}
-			else {
-				s += deck.get(index);
-			}
-			s += " of clubs!";
+			System.out.print(royal(intInd, index)); 
+			s = " of clubs!";
 		}
 		s += "\n You now have ";
 		s += YourNum;
@@ -195,77 +165,21 @@ public class BlackJack {
         public void GobHelper() {
                 String s = "\n The Goblin draws a card, it's a ";
                 int index = (int)(Math.random()* deck.size());
-		GobNum += (int) (deck.get(index));
+				GobNum += (int) (deck.get(index));
                 if (index <= 13) {
-					if (((int)(deck.get(index))) == 11){
-						s += "jack";
-					}
-					else if (((int)(deck.get(index))) == 12){
-						s += "queen";
-					}
-					else if (((int)(deck.get(index))) == 13){
-						s += "king";
-					}
-					else if (((int)(deck.get(index))) == 1){
-						s += "ace";
-					}
-					else {
-						s += deck.get(index);
-					}
+					System.out.print(royal(intInd, index));
 					s += " of spades!";
 				}
 				else if (index <= 26) {
-					if (((int)(deck.get(index))) == 11){
-						s += "jack";
-					}
-					else if (((int)(deck.get(index))) == 12){
-						s += "queen";
-					}
-					else if (((int)(deck.get(index))) == 13){
-						s += "king";
-					}
-					else if (((int)(deck.get(index))) == 1){
-						s += "ace";
-					}
-					else {
-						s += deck.get(index);
-					}
+					System.out.print(royal(intInd, index));
 					s += " of hearts!";
 				}
 				else if (index <= 39) {
-					if (((int)(deck.get(index))) == 11){
-						s += "jack";
-					}
-					else if (((int)(deck.get(index))) == 12){
-						s += "queen";
-					}
-					else if (((int)(deck.get(index))) == 13){
-						s += "king";
-					}
-					else if (((int)(deck.get(index))) == 1){
-						s += "ace";
-					}
-					else {
-						s += deck.get(index);
-					}
+					System.out.print(royal(intInd, index));
 					s += " of diamonds!";
 				}
 				else {
-					if (((int)(deck.get(index))) == 11){
-						s += "jack";
-					}
-					else if (((int)(deck.get(index))) == 12){
-						s += "queen";
-					}
-					else if (((int)(deck.get(index))) == 13){
-						s += "king";
-					}
-					else if (((int)(deck.get(index))) == 1){
-						s += "ace";
-					}
-					else {
-						s += deck.get(index);
-					}
+					System.out.print(royal(intInd, index));
 					s += " of clubs!";
 				}
                 s += "\n The Goblin now has ";
