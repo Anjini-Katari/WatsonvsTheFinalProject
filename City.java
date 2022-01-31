@@ -1,26 +1,22 @@
-/** Watson vs The Final Project
-Anjini Katari
-Ruby Friedman
-Joshua Gao */
-
 import java.io.*;
 import java.util.ArrayList;
 
 public class City{
 	protected String __name;
+    protected String prompt;
 	protected ArrayList<String> _treasure;
 
-	protected int choice;
+	protected int playerChoice;
 	protected boolean gameOver;
 
 	protected InputStreamReader isr;
-	protected BufferedReader in;
+	protected BufferedReader br;
 
 	public City() {
 		gameOver = false;
-		isr = new InputStreamReader( System.in );
-		in = new BufferedReader( isr );
-		choice = 0;
+		isr = new InputStreamReader( System.br );
+		br = new BufferedReader( isr );
+		playerChoice = 0;
 
 	}
 
@@ -36,18 +32,18 @@ public class City{
 	public ArrayList<String> getTreasure() { return _treasure; }
 
     public void city(){
-        String s = "\n *portal whooshing noises* \n \n";
-        s += "Whoa! \n You suddenly appear in a magical, bustling city, filled with all kinds of magical creatures! \n";
-        s += "You continue to follow the pheonix into the twisted, narrow streets of the city market, when you see a centaur";
-        s += " drop a bag of their blue looking apples. \n The centaur appears extremely distressed about this. \n ";
-
-        s += "\t1: Help the centaur \n";
-        s += "\t2: Continue to follow the pheonix \n";
-        s += "Selection: ";
-        System.out.print( s );
+        String prompt = "\n *portal whooshing noises* \n \n";
+        prompt += "Ka-boom! \n With the air rushing right past you, you see all kinds of magical creatures flying around in what appears to be a hidden city of another world. \n";
+        prompt += " Seeing a burning pheonix fly above you, you decided to follow the enchanted creature until you sudden stumble across a centaur";
+        prompt += " The centaur seemed to have dropped a bag of mysteriously glowing blue apples. \n Frantically pounding their hooves against the ground, the centur appears extremely distressed about this. \n ";
+        prompt += " You believe this unknown food might be something of great importance to the creature. Perhaps without it, it might even die!\n ";
+        prompt += "\t1: Help the centaur \n";
+        prompt += "\t2: Continue to follow the pheonix \n";
+        prompt += "Selection: ";
+        System.out.print( prompt );
 
         try {
-            choice  = Integer.parseInt( in.readLine() );
+            choice  = Integer.parseInt( br.readLine() );
         }
 
         catch ( IOException e ) { }
@@ -61,34 +57,31 @@ public class City{
     }//city method end
 
     public void help(){
-        String s = "You rush over to help the centaur pick up the strange looking apples. \n";
-        s += "'Thank you, young one, you are very kind.'\n";
-        s += "The centaur hands you one of the apples.\n";
-        s += "'These are the finest fruits in the land. I hope you enjoy its taste. '\n";
-        s += "\n *treasure + 1* \n \n";
+        String prompt = "Seeing the centaur become even more increasingly frustrated, you quickly rush over to pick up the strange looking apples. \n";
+        prompt += "'Holding it in your hands, you feel the fruit is unusually cold.'\n";
+        prompt += "'Thank you there, young adventurer. I become very panicked when I dropped those apples because they in fact are not only of the finest fruits in the land, but also serves as medicinal treatment to cure illness.'\n";
+        prompt += "The centaur hands you one of the apples.\n";
+        prompt += "' To show my appreciation for your generosity, I will give you this sacred fruit. Keep it close to you. You will know when you need it in the future.'\n";
+        prompt += "' Thank you, sir. I really appreciate your hospitality.'\n";
+        prompt += "\n *treasure + 1* \n";
 
         _treasure.add("strange blue apple");
 
-        s += "You rush after the pheonix and your friend, who have left you behind. \n Luckily they ";
-        s += "left behind map so you could follow. \n You follow the map until you reach a large castle";
-        s += " made of stone and glass. \n You see your friend about to enter, and jog to catch up to them.\n";
-        s += "The pheonix leads you down the halls and into a room of mirrors.\n It bows its head to you";
-        s += " in farewell, and flies out an open window. \n Your friend touches the mirror, it's a portal!\n";
-        s += "You both walk through. \n";
-
-        System.out.print(s);
-
-        Mirror onTheWall = new Mirror(__name, _treasure);
-    }
-
-    public void cont(){
-        String s = "You quickly look away and hurry after the pheonix.\n After minutes of walking, you ";
-        s += "reach a large castle made of stone and glass. You enter without fanfare and the pheonix leads you";
-        s += " down the long halls and into a room of mirrors.\n It bows its head to you";
-        s += " in farewell, and flies out an open window. \n Your friend touches the mirror, it's a portal!\n";
-        s += "You both walk through. \n";
-
-        System.out.print(s);
+        prompt += "Noticing your friends are already so far ahead, you quickly stuff the fruits away into your bag before rushing to catch up to them and the pheonix ahead. \n";
+        prompt += "Luckily, you noticed there was a map at your previous meet-up location. You realize your friends must have left it behind  so you could follow.\n";
+        prompt += " Following the instructions on the map, you begin walking towards this unknown destination before finally arriving at a large castle made surprisingly of stone and glass.\n";
+        prompt += " Seeing your friends are actually about to enter, you quickly break into a run: just making it in time. \n";
+        prompt += " Upon entering the castle, you see the same pheonix you have been chasing at the very beginning fly into a massive hall to a room filled with mirrors.\n";
+        prompt += " You and your friends decided to continue following the creatures, hoping to understand its behaviors. \n";
+        prompt += " After entering the room, you see the pheonix actually bowing its heads to you, almost kneeling down before a shifting glass window.\n";
+        
+        prompt += " One of your friends rushes over to this enigmatic window before exclaiming it is a portal! \n";
+        prompt += " Confused, you ask him how he knows such a fact to which he replied he saw other creatures entering this similar portal to travel between the worlds. \n";
+        prompt += " Though reluctant at first, you realize you have no other alternative but this portal to go home so you and your friends decide to take the leap of faith and walk through the mirror. \n";
+        prompt += " Whoosh! As your visions start blackening and you see the world melts around you, you and your friends suddenly wake up in the same cabin as if nothing had ever happened.\n";
+        prompt += " You have made it back home!\n";
+        
+        System.out.print(prompt);
 
         Mirror onTheWall = new Mirror(__name, _treasure);
     }
