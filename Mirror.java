@@ -1,26 +1,22 @@
-/** Watson vs The Final Project
-Anjini Katari
-Ruby Friedman
-Joshua Gao */
-
 import java.io.*;
 import java.util.ArrayList;
 
 public class Mirror{
 	protected String __name;
+    protected String prompt;
 	protected ArrayList<String> _treasure;
 
-	protected int choice;
+	protected int playerChoice;
 	protected boolean gameOver;
 
 	protected InputStreamReader isr;
-	protected BufferedReader in;
+	protected BufferedReader br;
 
 	public Mirror() {
 		gameOver = false;
-		isr = new InputStreamReader( System.in );
-		in = new BufferedReader( isr );
-		choice = 0;
+		isr = new InputStreamReader( System.br );
+		br = new BufferedReader( isr );
+		playerChoice = 0;
 
 	}
 
@@ -36,22 +32,22 @@ public class Mirror{
 	public ArrayList<String> getTreasure() { return _treasure; }
 
     public void forest(){
-        String s = "You open your eyes to find yourself in a whole new forest. \n ";
-        s += "You and your friend walk around, looking for anyone or anything that could help you get home.\n";
-        s += "After a little while of walking, you encounter a gryffin! \n";
+        String prompt = "Blinking yoru eyes to adjust to the new light, you find yourself in a completely new forest brooming with vegetation and animal life. \n ";
+        prompt += "Looking around, you and your friends investigate the surrounding environment in hopes of finding anyone or anything that could help you get back home. \n";
+        prompt += "After what seemed like to be a 15 minute walk, you encounter a an eagle with a lower body of a lion parched upon one of the branches. It's a gryffin, you realized! \n";
 
-        s += "\t1: Bow in respect\n";
-        s += "\t2: Prepare for battle! \n";
-        s += "Selection: ";
-        System.out.print( s );
+        prompt += "\t1: Bow in respect\n";
+        prompt += "\t2: Prepare for battle! \n";
+        prompt += "Selection: ";
+        System.out.print( prompt );
 
         try {
-            choice  = Integer.parseInt( in.readLine() );
+            choice  = Integer.parseInt( br.readLine() );
         }
 
         catch ( IOException e ) { }
 
-        if (choice == 1) {
+        if (playerChoice == 1) {
             kind();
         }
         else {
@@ -60,38 +56,38 @@ public class Mirror{
     }
 
     public void kind() {
-        String s = "You kneel down in respect, and the gryffin lets out a happy squack and bows back.\n";
-        s += "Your friend laughs and you grin as you both reach out to pet it.\n";
-        s += "It squacks in delight before turning around, gesturing for you to get on its back with its head. \n";
-        s += "The two of you gently climb on its back, and hold on tightly to its fur.\n"; 
-        s += "The gryffin flaps its wings and propels itself into the air.\n ";
-        s += "\n Eventually the gryffin starts to descend, and you both hold on tighter.\n";
-        s += "The gryffin lands softly on the ground, in front of a giant portal. \n";
-        s += "You slide off and follow the gryffin closer to the portal.\n 'Home,' it whispers in your mind.\n";
-        s += "You and your friend look at each other in suprise and thank the gryffin, before entering the portal.\n";
+        String prompt = "Watching in awe of the legendary creature in front of you, you decide the wisest choice would be to kneel down in respect. Placing one knee down on the ground, you bow your head down as a form of deference to which the gryffin responds in a happy squack and proceeds to bow back.\n";
+        prompt += "Grinning at this encounter, you slowly reached your hands out almost as if asking the creature for permission to touch it. The gryffin joyfully obliges, and you proceed to pet the incredible animal. \n";
+        prompt += "It squacks in delight from your gentle touch before turning around, gesturing for you to get on its back with its head. \n";
+        prompt += "Realizing the creature is asking us to climb on its back, the two of you gently climbed over the creature and held fervently onto its fur.\n"; 
+        prompt += "Once both of you are steadily secured, the gryffin flaps its powerful wings, blowing a heavy gush of wind, and propels itself into the air.\n ";
+        prompt += "You and your friend exclaim in both terror and joy at the view you are seeing, almost 500 feet in air. The next few minutes are full of wide emotions, before eventually the gryffin begins to descend.\n";
+        prompt += "With a gentle stop, the gryffin lands softly on the ground, in front of what appears to be a giant portal. \n";
+        prompt += "Sliding off the gryffin's back, you following gryffin towards the portal, realizing this was your ticket home.\n";
+        prompt += "Mysteriously, both your friends begin hearing a voice confirming your thoughts. Ecstatic you and your friend thank the gryffin and pet it for the final time before entering the portal to go back home.\n";
 
-        s += "\n *portal whooshing noises* \n";
+        prompt += "\n *portal whooshing noises* \n";
 
-        s += "You open your eyes and find yourself back in the cabin. You rush outside only to see that you've made it ";
-        s += "back home. \n";
+        prompt += "Opening your eyes, you have arrived back onto the same cabin you were on the nights before. You rush outside to see if your friend has made it, only to see your friend also doing the same.";
+        prompt += "Welcome back home. \n";
 
         if (_treasure.size() > 0) {
-            s += "Curiously you check your pockets. In them you find:\n";
+            s += "Feeling a weight in your pockets, you curiously reach inside your pockets to see what you find. \n";
             for (int i = 0; i < _treasure.size(); i++){
-                s += _treasure.get(i);
-                s += "\n";
+                prompt += _treasure.get(i);
+                prompt += "\n";
             }
-            s += "You look at the treasure in surprise and wonder.\n\n";
+            prompt += "Taking the object out, you surprisingly realize it is a treasure! n";
         }
         
-        System.out.print(s);
+        System.out.print(prompt);
     }
     
     public void stabby() {
-        String s = "You take your fist and thrust it into the gryffin's eye. \n The gryffin cries in agony";
-        s += " before growling in rage and eating you in a single bite. \n";
+        String prompt = "Balling your fist into a punch, you thrust your fist with all your power into the gryffin's eye. \n ";
+        prompt += "The gryffin cries in agony before growling in rage and devoring you whole in a single bite. \n";
 
-        System.out.print(s);
+        System.out.print(prompt);
     }
 
 
